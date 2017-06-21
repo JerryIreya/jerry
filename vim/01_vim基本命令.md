@@ -92,7 +92,7 @@ vim fileName1 fileName2 fileName3 ...
 
 ?text  查找text，反向查找，按n键查找下一个，按N键查找前一个
 
-vim中有一些特殊字符在查找时需要转义 .\*[]^%/?~$ 
+vim中有一些特殊字符在查找时需要转义 .\*[]^%/?~$
 
 :set ignorecase 忽略大小写的查找
 
@@ -348,4 +348,4 @@ ZZ 保存并退出。
 
 [Vim学习指南](http://www.oschina.net/translate/learn-vim-progressively)
 
-<<OVER\>\>
+<<OVER\>\>   
