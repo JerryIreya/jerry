@@ -348,4 +348,4 @@ ZZ 保存并退出。
 
 [Vim学习指南](http://www.oschina.net/translate/learn-vim-progressively)
 
-<<OVER\>\>   1212
+<<OVER\>\>  
