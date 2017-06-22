@@ -153,4 +153,30 @@ TCP提供了：
 
 在HTTP客户端向服务器发送报文之前，需要用网际协议(Internet Protocol,IP)地址和端口号在客户端和服务器之间建立一条TCP/IP连接。
 
-建立一条TCP连接的过程与给公
+建立一条TCP连接的过程与给公司办公室的某个人打电话的过程类似。首先，要拨打公司的电话号码，这样就能进入正确的机构了。其次，拨打要联系的那个人的分机号。
+
+在TCP中，你需要知道服务器的IP地址，以及与服务器上运行的特定软件相关的TCP端口号。
+
+这就行了，但最初怎么获得HTTP服务器的IP地址和端口号呢？当然是通过URL了！URL就是资源的地址，所以自然能够为我们提供存储资源的机器的IP地址。我们来看几个URL：
+
+* http://207.200.23.25:80/index.html
+* http://www.netscape.com:80/index.html
+* http://www.netscape.com:index.html
+
+第一个URL使用了IP地址，以及端口号  
+第二个URL使用了文本形式的域名，或者称为主机名。主机名就是IP地址人性化的别称。可以通过一种称为 **域名服务(Domain Name Services,DNS)** 的机制方便地将主机名转换为IP地址。  
+最后一个URL没有端口号，HTTP的默认端口号是80
+
+有了IP地址和端口号，客户端就可以通过TCP/IP和服务器进行通信了。图1-10显示了浏览器是怎样通过HTTP显示位于服务器中的某个HTML资源的。
+
+![https://github.com/JerryIreya/Image/blob/master/HTTP_Chapter1_1-10.png?raw=true](https://github.com/JerryIreya/Image/blob/master/HTTP_Chapter1_1-10.png?raw=true)
+
+步骤如下：
+
+1. 浏览器从URL中解析出服务器主机名
+2. 浏览器将主机名转换成IP地址
+3. 浏览器将端口号从URL中解析出来
+4. 浏览器建立一条与服务器的TCP连接
+5. 浏览器向服务器发送一条HTTP请求报文
+6. 服务器向浏览器回送一条HTTP响应报文
+7. 关闭连接，浏览器显示文档
