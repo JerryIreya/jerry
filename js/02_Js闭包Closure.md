@@ -57,3 +57,5 @@ function() { console.log(text); }
 在js中，一个函数引用还会对包含它的闭包有一个```secret reference```。
 
 这里如果有点蒙的话
+
+以后有时间完成这篇关于闭包的博客。  https://stackoverflow.com/questions/111102/how-do-javascript-closures-work#
